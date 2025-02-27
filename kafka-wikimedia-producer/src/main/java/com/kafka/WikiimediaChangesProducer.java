@@ -23,7 +23,7 @@ public class WikiimediaChangesProducer {
     }
 
     public void sendMessage() throws InterruptedException {
-        String topic = "wikimedia_recentchage";
+        String topic = "wikimedia_recentchange";
 
         //to read realtime stream data from wikimedia
         EventHandler evenetHandler = new WikimediaChangesHandler(kafkaTemplate,topic);
